@@ -1,3 +1,5 @@
+require("global-agent/bootstrap");
+global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:8899";
 let mode = __dirname.includes('magic')
 const {Env} = mode ? require('./magic') : require('./magic')
 const $ = new Env('M收藏有礼');
@@ -63,7 +65,7 @@ $.logic = async function () {
     }
     await DelShopFav()
 };
-$.run({wait: [300, 1000],whitelist: ['1-5']})
+$.run({wait: [300, 1000],whitelist: ['1-20']})
 .catch(reason => $.log(reason))
 
 async function GiveShopGift() {
