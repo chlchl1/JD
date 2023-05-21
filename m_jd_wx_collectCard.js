@@ -1,4 +1,5 @@
-//问题反馈:https://t.me/Wall_E_Channel
+require("global-agent/bootstrap");
+global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:8899";
 let mode = __dirname.includes('magic')
 const {Env} = mode ? require('./magic') : require('./magic')
 const $ = new Env('M集卡抽奖');
@@ -234,5 +235,5 @@ $.after = async function () {
         $.msg.push($.activityUrl);
     }
 }
-$.run({whitelist: ['1-5'], wait: [1000, 3000]}).catch(
+$.run({whitelist: ['1-20'], wait: [1000, 3000]}).catch(
     reason => $.log(reason));
