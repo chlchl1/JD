@@ -1,4 +1,5 @@
-//问题反馈:https://t.me/Wall_E_Channel
+require("global-agent/bootstrap");
+global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:8899";
 let mode = __dirname.includes('magic')
 const {Env} = mode ? require('./magic') : require('./magic')
 const $ = new Env('M完善有礼');
