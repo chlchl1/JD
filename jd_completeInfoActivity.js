@@ -18,8 +18,6 @@ cron:1 1 1 1 *
 #CJ完善有礼-加密
 1 1 1 1 * jd_completeInfoActivity.js, tag=CJ完善有礼-加密, enabled=true
 */
-require("global-agent/bootstrap");
-global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:8899";
 let jd_completeInfoActivity_activityId = "" // 活动id
 let jd_completeInfoActivity_venderId = "" // 店铺id
 let jd_completeInfoActivity_activityUrl = "https://cjhydz-isv.isvjcloud.com" // 活动地址
