@@ -11,8 +11,6 @@ new Env('店铺抽奖-JK');
 ActivityEntry：https://shop.m.jd.com/shop/lottery?shopId=xxxxx&venderId=xxxxx
 Description: 变量：export DPCJID="shopId1&shopId2" #变量为店铺🆔
 """
-proxies = {"http":"http://http://172.17.0.1:8899","https":"http://172.17.0.1:8899"}
-requests.get(url,proxies=proxies)
 import requests, time, re, os, sys, json
 from datetime import datetime
 from sendNotify import *
