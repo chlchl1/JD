@@ -8,8 +8,6 @@ prodevinviteNum 是否跑实物,默认跑
 activityUrl = https://prodev.m.jd.com/mall/active/dVF7gQUVKyUcuSsVhuya5d2XD4F/index.html?code=
 7 7 7 7 7 jd_prodev.js
 */
-require("global-agent/bootstrap");
-global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:8899";
 const $ = new Env('邀请好友入会赢好礼-火箭版');
 const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
