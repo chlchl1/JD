@@ -1,5 +1,4 @@
-proxies = {"http":"http://http://172.17.0.1:8899","https":"http://172.17.0.1:8899"}
-requests.get(url,proxies=proxies)
+
 """
 # 邀好友赢大礼 create by doubi 通用模板 
 # 17:/椋东送福利，邀请好友，争排行榜排位，大礼送不停，(E1Y7RAtC4b) ，升级新版猄·=·Dσσōngαpρ
