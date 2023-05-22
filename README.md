@@ -81,7 +81,7 @@ https-proxy-agent
 ```
 # 拉库
 ```shell
-ql repo https://github.com/LYC-axiba/JD-Monitoring-library.git "jd_" "" "^jd[^_]|USER|function|sendNotify|magic|h5sts"
+ql repo https://github.axiba.tk/https://github.com/LYC-axiba/JD-Monitoring-library.git "jd_" "" "^jd[^_]|USER|function|sendNotify|magic|h5sts"
 ```
 以下是我整理这个仓库的配置文件，顺序从上到下对应着此库的脚本，M脚本我设置跑的每个容器前20个CK,除了M脚本外如果不想跑20个号，可以复制以下内容，把35替换成你执行的数量,把pin值改成你自己的
 ```shell
@@ -289,9 +289,9 @@ export jd_lzaddCart_activityId=""
 
 #[KR] JoinCommon开卡专用   KingRan_KR/jd_opencardJBK.js
 export opencard_id=""
-export opencard_open="true" #开启开卡
-export opencard_addCart="true" #开启加购
-export opencard_draw="3" #抽奖次数
+export opencard_open="true"
+export opencard_addCart="true"
+export opencard_draw="3"
 
 #[KR] 飞利浦组队分豆-加密   KingRan_KR/jd_teamFLP.js
 export jd_teamFLP_activityId=""
@@ -375,7 +375,7 @@ export jd_cjhy_wxKnowledgeActivity_num="20"
 export jd_cjhy_wxKnowledgeActivity_openCard="1"
 
 #【保护环境】cjhy生日礼   feverrun_my_scripts/jd_cjhy_wxMcLevelAndBirthGifts.js
-export jd_cjhy_wxMcLevelAndBirthGifts_ids = "id1&id2&id3"
+export jd_cjhy_wxMcLevelAndBirthGifts_ids="id1&id2&id3"
 export jd_cjhy_wxMcLevelAndBirthGifts_num="20"
 export jd_cjhy_wxMcLevelAndBirthGifts_openCard="1"
 
