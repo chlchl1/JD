@@ -13,8 +13,6 @@ cron:10 10 10 10 *
 1 1 1 1 * jd_cjzdgf.js, tag=CJ组队瓜分京豆, enabled=true
 
 */
-require("global-agent/bootstrap");
-global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:8899";
 let jd_cjhy_activityId="" // 活动ID
 let jd_cjhy_activityUrl="https://cjhydz-isv.isvjcloud.com" // 活动地址
 
