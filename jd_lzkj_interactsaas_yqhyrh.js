@@ -4,8 +4,6 @@ https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10070&tem
 export jd_lzkj_interactsaas_yqhyrh_activityId="活动id"            必须
 cron "2 2 29 2 *" jd_lzkj_interactsaas_yqhyrh.js
 */
-require("global-agent/bootstrap");
-global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:8899";
 const $ = new Env('lzkj_interactsaas邀请好友入会')
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const notify = $.isNode() ? require('./sendNotify') : '';
