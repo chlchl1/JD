@@ -1,5 +1,3 @@
-require("global-agent/bootstrap");
-global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:8899";
 let mode = __dirname.includes('magic')
 const {Env, CryptoJS} = mode ? require('./magic') : require('./magic')
 const $ = new Env('M无线游戏');
