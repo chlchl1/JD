@@ -12,8 +12,6 @@ new Env('盖楼有礼-JK');
 ActivityEntry: https://lzkj-isv.isvjcloud.com/wxBuildActivity/activity?activityId=4bde809b95ec45a3b50f7086d77f3178
             变量: export jd_wxBulidActivityId="活动🆔"
 """
-proxies = {"http":"http://http://172.17.0.1:8899","https":"http://172.17.0.1:8899"}
-requests.get(url,proxies=proxies)
 import time, requests, sys, re, os, json, random
 from datetime import datetime
 from urllib.parse import quote_plus, unquote_plus
