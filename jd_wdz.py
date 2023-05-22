@@ -15,8 +15,6 @@ Description: 微定制组队通用脚本
             变量: export jd_wdz_activityId="eb24d792fdcf4732be29030f9fc8e007"
 Update: 2022/11/01 更新入会算法，内置船新入会本地算法
 """
-proxies = {"http":"http://http://172.17.0.1:8899","https":"http://172.17.0.1:8899"}
-requests.get(url,proxies=proxies)
 import time, requests, sys, re, os, json, random
 from datetime import datetime
 from urllib.parse import quote_plus, unquote_plus
