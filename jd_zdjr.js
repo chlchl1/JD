@@ -23,8 +23,6 @@ mitm
 cron "40 11 * * *" script-path=jd_zdjr.js,tag=组队瓜分京豆
 
 */
-require("global-agent/bootstrap");
-global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:8899";
 let jd_zdjr_activityId = ''// 活动ID
 let jd_zdjr_activityUrl = 'https://lzkjdz-isv.isvjcloud.com'// 活动地址
 const $ = new Env('LZ组队瓜分京豆-加密');
