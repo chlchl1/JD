@@ -12,8 +12,6 @@ new Env('完善信息有礼-JK');
 ActivityEntry: https://cjhy-isv.isvjcloud.com/wx/completeInfoActivity/view/activity?activityId=f3325e3375a14866xxxxxxxxxxxx&venderId=1000086
                变量 export jd_wxCompleteInfoId="f3325e3375a14866xxxxxxxxxxxx&1000086192"(活动id&venderId)
 """
-proxies = {"http":"http://http://172.17.0.1:8899","https":"http://172.17.0.1:8899"}
-requests.get(url,proxies=proxies)
 import time, requests, sys, re, os, json, random
 from datetime import datetime
 from urllib.parse import quote_plus, unquote_plus
