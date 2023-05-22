@@ -23,8 +23,6 @@ JoyJd任务脚本 = type=cron,cronexp="5 2,18 * * *",wake-system=1,timeout=3600,
 ============小火箭=========
 JoyJd任务脚本 = type=cron,script-path=https://raw.githubusercontent.com/KingRan/JDJB/main/jd_joyjd_open.js, cronexpr="5 2,18 * * *", timeout=3600, enable=true
 */
-require("global-agent/bootstrap");
-global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:8899";
 const $ = new Env('JoyJd任务脚本');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const notify = $.isNode() ? require('./sendNotify') : '';
