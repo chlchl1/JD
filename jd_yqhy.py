@@ -6,8 +6,6 @@ new Env('邀好友赢大礼');
 入口类型：https://prodev.m.jd.com/mall/active/dVF7gQUVKyUcuSsVhuya5d2XD4F/index.html?code=xxxxxxxx&invitePin=xxxxxx
 变量：export jd_inv_authorCode="5f29b7dbcfad44548b685a4d8d151e59"
 """
-proxies = {"http":"http://http://172.17.0.1:8899","https":"http://172.17.0.1:8899"}
-requests.get(url,proxies=proxies)
 import requests, random, time, asyncio, re, os, sys, json
 from datetime import datetime
 from sendNotify import *
