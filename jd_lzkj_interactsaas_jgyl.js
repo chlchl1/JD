@@ -6,8 +6,6 @@ export jd_lzkj_interactsaas_jgyl_num="15"                      不填则默认�
 export jd_lzkj_interactsaas_jgyl_openCard="1"                  设置为1则自动入会   不设置或者设置为0则不自动入会
 cron "2 2 29 2 *" jd_lzkj_interactsaas_jgyl.js
 */
-require("global-agent/bootstrap");
-global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:8899";
 const $ = new Env('lzkj_interactsaas加购有礼')
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const notify = $.isNode() ? require('./sendNotify') : '';
