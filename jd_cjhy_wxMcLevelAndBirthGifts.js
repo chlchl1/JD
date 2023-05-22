@@ -8,8 +8,6 @@ export jd_cjhy_wxMcLevelAndBirthGifts_openCard="1"            #设置为1则自�
 
 cron "2 2 29 2 *" jd_cjhy_wxMcLevelAndBirthGifts.js
 */
-require("global-agent/bootstrap");
-global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:8899";
 const $ = new Env('cjhy会员等级与生日礼')
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const notify = $.isNode() ? require('./sendNotify') : '';
