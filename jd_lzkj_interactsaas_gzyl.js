@@ -5,8 +5,6 @@ export jd_lzkj_interactsaas_gzyl_activityId="活动id"            必须
 export jd_lzkj_interactsaas_gzyl_num="15"                      不填则默认最多跑15个号
 cron "2 2 29 2 *" jd_lzkj_interactsaas_gzyl.js
 */
-require("global-agent/bootstrap");
-global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:8899";
 const $ = new Env('lzkj_interactsaas关注店铺有礼')
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const notify = $.isNode() ? require('./sendNotify') : '';
