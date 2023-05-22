@@ -8,8 +8,6 @@ export OPENCARD_BEAN="xxx"       #最低多少豆入会
 
 cron "2 2 29 2 *" jd_card_force.js
 */
-require("global-agent/bootstrap");
-global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:8899";
 const $ = new Env('入会开卡领取礼包');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const notify = $.isNode() ? require('./sendNotify') : '';
