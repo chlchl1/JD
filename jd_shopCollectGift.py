@@ -13,8 +13,6 @@ ActivityEntry: https://shop.m.jd.com/shop/home?shopId=1000003443
 Description: 部分账号开卡后无法自动领取开卡奖励,不自动开卡,仅领取已开卡的会员礼包
              变量export jd_shopCollectGiftId="1000003443" 变量为店铺venderId
 """
-proxies = {"http":"http://http://172.17.0.1:8899","https":"http://172.17.0.1:8899"}
-requests.get(url,proxies=proxies)
 import requests, sys, os, re, time
 from datetime import datetime
 from functools import partial
