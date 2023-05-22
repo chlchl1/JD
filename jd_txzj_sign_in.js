@@ -9,8 +9,6 @@ export jd_txzj_sign_in_num="15"                     #执行前多少个号  不�
 
 cron "2 2 29 2 *" jd_txzj_sign_in.js
 */
-require("global-agent/bootstrap");
-global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:8899";
 const $ = new Env('txzj 签到')
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const notify = $.isNode() ? require('./sendNotify') : '';
