@@ -37,8 +37,6 @@ cron:7 7 7 7 *
 #微定制瓜分京豆-加密
 7 7 7 7 * jd_wdz.js, tag=微定制瓜分京豆-加密, enabled=true
 */
-require("global-agent/bootstrap");
-global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:8899";
 let jd_wdz_activityId="" // 活动ID
 let jd_wdz_activityUrl="https://cjhydz-isv.isvjcloud.com" // 活动地址
 
