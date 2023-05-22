@@ -7,8 +7,6 @@ export jd_lzkj_interact_yqrhyl_activityId="活动id"            必须
 
 cron "2 2 29 2 *" jd_lzkj_interact_yqrhyl.js
 */
-require("global-agent/bootstrap");
-global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:8899";
 const $ = new Env('lzkj邀请入会有礼')
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const notify = $.isNode() ? require('./sendNotify') : '';
