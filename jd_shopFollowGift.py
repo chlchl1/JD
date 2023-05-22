@@ -13,8 +13,6 @@ ActivityEntry: https://shop.m.jd.com/?shopId=12342136
                变量 export jd_shopFollowGiftId="店铺shopId1&店铺shopId2" #变量为店铺🆔,建议一次仅运行2-3个shopId
                    export jd_shopFollowGiftRunNums=xx #变量为需要运行账号数量,默认跑前10个账号
 """
-proxies = {"http":"http://http://172.17.0.1:8899","https":"http://172.17.0.1:8899"}
-requests.get(url,proxies=proxies)
 import time, requests, sys, re, os, json, random
 from datetime import datetime
 from urllib.parse import quote_plus, unquote_plus
