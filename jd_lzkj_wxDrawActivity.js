@@ -9,8 +9,6 @@ export jd_lzkj_wxDrawActivity_openCard="1"      设置为1则自动入会 不设
 
 cron "2 2 29 2 *" jd_lzkj_wxDrawActivity.js
 */
-require("global-agent/bootstrap");
-global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:8899";
 const $ = new Env('lzkj幸运抽奖')
 
 
