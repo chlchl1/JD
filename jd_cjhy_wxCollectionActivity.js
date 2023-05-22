@@ -9,8 +9,6 @@ export jd_cjhy_wxCollectionActivity_openCard="1"        #设置为1则自动入�
 
 cron "2 2 29 2 *" jd_cjhy_wxCollectionActivity.js
 */
-require("global-agent/bootstrap");
-global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:8899";
 const $ = new Env('cjhy加购物车抽奖')
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const notify = $.isNode() ? require('./sendNotify') : '';
