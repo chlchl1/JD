@@ -9,8 +9,6 @@ export jd_cjhy_wxShopFollowActivity_openCard="1"      #设置为1则自动入会
 
 cron "2 2 29 2 *" jd_cjhy_wxShopFollowActivity.js
 */
-require("global-agent/bootstrap");
-global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:8899";
 const $ = new Env('cjhy关注店铺有礼')
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const notify = $.isNode() ? require('./sendNotify') : '';
