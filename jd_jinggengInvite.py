@@ -13,8 +13,6 @@ new Env('jinggeng邀请入会有礼');
         export jinggengInviteJoin="9e80809282a4bdc90182ab254c7e0a12&1000121005"(活动id&店铺id)
 Update: 2022/11/01 更新入会算法，内置船新入会本地算法
 """
-proxies = {"http":"http://http://172.17.0.1:8899","https":"http://172.17.0.1:8899"}
-requests.get(url,proxies=proxies)
 import time, requests, sys, re, os, json, random
 from bs4 import BeautifulSoup
 from datetime import datetime
