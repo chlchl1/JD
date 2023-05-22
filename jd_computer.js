@@ -4,8 +4,6 @@ export computer_activityIdList="17"
 
 即时任务，无需cron
 */
-require("global-agent/bootstrap");
-global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:8899";
 const $ = new Env('电脑配件通用ID任务');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 
