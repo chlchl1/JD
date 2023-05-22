@@ -12,8 +12,6 @@ new Env('店铺特效关注有礼-JK');
 ActivityEntry: https://lzkj-isv.isvjcloud.com/wxShopGift/activity?activityId=971e85d5dfd445e1acfc63bafffb8ecc
                变量 export jd_wxShopGiftId="971e85d5dfd445e1axxxxxxxxxxxx"
 """
-proxies = {"http":"http://http://172.17.0.1:8899","https":"http://172.17.0.1:8899"}
-requests.get(url,proxies=proxies)
 import time, requests, sys, re, os, json, random
 from datetime import datetime
 from urllib.parse import quote_plus, unquote_plus
