@@ -4,8 +4,6 @@ export jd_shop_draw_ids="shopId&shopId&shopId"              必须
 export jd_shop_draw_num="15"                                不设置默认最多跑15个号
 cron "2 2 29 2 *" jd_shop_draw.js
 */
-require("global-agent/bootstrap");
-global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:8899";
 const $ = new Env('店铺抽奖');
 const notify = $.isNode() ? require('./sendNotify') : '';
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
