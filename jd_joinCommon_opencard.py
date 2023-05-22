@@ -15,8 +15,7 @@ Description: dingzhi/joinCommon系列通用开卡脚本(通常情况下,开一�
             变量: export jd_joinCommonId="2b870a1a7450xxxxxxxxxxxxx&1000000904" 变量值需要传入活动id&shopId
 Update: 2022/11/01 更新入会算法，内置船新入会本地算法
 """
-proxies = {"http":"http://http://172.17.0.1:8899","https":"http://172.17.0.1:8899"}
-requests.get(url,proxies=proxies)
+
 import time, requests, sys, re, os, json, random
 from datetime import datetime
 from urllib.parse import quote_plus, unquote_plus
