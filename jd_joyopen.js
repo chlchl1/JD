@@ -13,8 +13,6 @@ cron:2 1 * * *
 2 1 * * * jd_joyopen.js, tag=JOY通用开卡活动, enabled=true
 
 */
-require("global-agent/bootstrap");
-global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:8899";
 const $ = new Env('joyjd通用开卡');
 const Faker = require('./sign_graphics_validate.js')
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
