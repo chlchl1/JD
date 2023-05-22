@@ -12,8 +12,6 @@ ActivityEntry: https://lzkj-isv.isvjcloud.com/wxShopFollowActivity/activity?acti
                变量 export jd_wxShopFollowId="活动🆔"
                    export jd_wxShopFollowRunNums="变量为需要运行账号数量" # 默认前12个账号
 """
-proxies = {"http":"http://http://172.17.0.1:8899","https":"http://172.17.0.1:8899"}
-requests.get(url,proxies=proxies)
 import time, requests, sys, re, os, json, random
 from datetime import datetime
 from sendNotify import *
