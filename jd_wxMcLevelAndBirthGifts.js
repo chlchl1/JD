@@ -18,8 +18,6 @@ cron:1 1 1 1 *
 #CJ店铺生日和等级礼包-加密
 1 1 1 1 * jd_wxMcLevelAndBirthGifts.js, tag=CJ店铺生日和等级礼包-加密, enabled=true
 */
-require("global-agent/bootstrap");
-global.GLOBAL_AGENT.HTTP_PROXY="http://172.17.0.1:8899";
 let jd_wxMcLevelAndBirthGifts_activityId = "" // 活动ID
 let jd_wxMcLevelAndBirthGifts_activityUrl = "https://cjhy-isv.isvjcloud.com/" // 活动地址
 
