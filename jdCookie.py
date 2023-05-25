@@ -4,7 +4,7 @@
 # @Author  : HarbourJ
 # @TG      : https://t.me/HarbourToulu
 # @File    : jdCookie.py
-new Env('Faker库依赖一键安装');
+new Env('船长库依赖一键安装');
 import os
 import time
 from functools import partial
